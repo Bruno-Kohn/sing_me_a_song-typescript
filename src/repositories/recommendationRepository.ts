@@ -1,5 +1,18 @@
 import connection from "../database";
 
+interface Recommendation {
+  id: number;
+  name: string;
+  youtubeLink: string;
+  score: number;
+}
+
+interface DoingRecommendation {
+  name: string;
+  youtubeLink: string;
+  score: number;
+}
+
 export async function create(name: string, youtubeLink: string, score: number) {
   await connection.query(
     `

@@ -1,5 +1,4 @@
 import getYouTubeID from "get-youtube-id";
-
 import * as recommendationRepository from "../repositories/recommendationRepository";
 
 export async function saveRecommendation(name: string, youtubeLink: string) {
